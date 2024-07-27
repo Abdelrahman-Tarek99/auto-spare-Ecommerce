@@ -1,0 +1,148 @@
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  padding: 0.5rem;
+}
+/* .nav-section {
+} */
+.ad-section {
+  background-color: var(--color-secondary);
+}
+.ad-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+.mail-area,
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail-area-text div,
+.phone-area div {
+  color: var(--color-white);
+}
+.mail-area a,
+.phone-area a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.ad-container button {
+  width: 198px;
+  background-color: var(--color-darkGrey);
+  color: var(--color-white);
+  border-radius: 5px;
+}
+.nav-body-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 5px 10px 5px;
+}
+.logo {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-toggler {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  padding: 0 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+}
+.cart-icon{
+  cursor: pointer;
+}
+.cart-count{
+  top: 0;
+  right: 0;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0.8rem;
+
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    padding: 0;
+  }
+  .logo, .nav-toggler{
+    margin: 0.5rem;
+  }
+  .hero-section-text > p, .hero-section-text > h1 {
+    text-shadow: none;
+    padding:  10px 0;
+  }
+  .ad-section {
+    display: none;
+  }
+  .nav-toggler {
+    display: block;
+  }
+  .nav-body-2 {
+    display: block;
+    position: relative;
+  }
+  .nav-head-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    display: none;
+    width: 100%;
+    background-color: var(--color-primary);
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-links.open {
+    opacity: 1;
+    z-index: 1;
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px;
+  }
+  .mobile-nav-social {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    bottom: -225px;
+  }
+  .cart-count{
+    right: 25%;
+  }
+ 
+}

@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/public/fonts/Inter-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/public/fonts/Poppins-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+:root{
+  --color-dark: #000000;
+  --color-lightDark: #333333;
+  --color-primary: #D4D4D4;
+  --color-secondary: #868686;
+  --color-darkGrey: #4E4B4B;
+  --color-white: #FFFFFF;
+  
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: var(--color-primary);
+}
+p{
+  margin-bottom: 0;
+
+}
+.container{
+  min-height: 100dvh;
+}
+

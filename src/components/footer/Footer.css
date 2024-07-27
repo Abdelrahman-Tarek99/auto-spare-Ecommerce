@@ -1,0 +1,108 @@
+.footer-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  grid-template-rows: auto auto;
+  place-items: center;
+  padding: 105px 20px;
+  padding-bottom: 40px;
+}
+.footer-grid-item {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.footer-grid-item-container {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.footer-grid-links {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr 1.5fr;
+}
+.footer-links-header h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9f9f9f;
+  margin-bottom: 55px;
+}
+.footer-links-header ul > li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+  font-weight: bold;
+}
+.footer-links-header ul {
+  padding-left: 0;
+}
+.footer-links-header ul li:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.footer-rights-reserved {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  padding: 10px 20px;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+  text-align: center;
+}
+.footer-rights-reserved p {
+  font-size: 0.8rem;
+  color: var(--color-dark);
+}
+.footer-links-header input {
+  width: 200px;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid var(--color-dark);
+  outline: none;
+  font-size: 1rem;
+  color: var(--color-dark);
+}
+.footer-links-header button {
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid var(--color-dark);
+  color: var(--color-dark);
+  background-color: transparent;
+  font-size: 1rem;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-grid-container {
+    place-items: start;
+  }
+  .footer-grid-container {
+    padding: 55px 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .footer-grid-links {
+    grid-template-columns: 1fr;
+  }
+  .footer-grid-item {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+  }
+  .footer-grid-item-container {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+  }
+  .footer-rights-reserved {
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+  }
+  .footer-links-header {
+    margin-bottom: 20px;
+  }
+  .footer-links-header h2 {
+    margin-bottom: 10px;
+  }
+  .footer-links-header ul > li {
+    margin-bottom: 10px;
+  }
+}

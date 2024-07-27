@@ -1,0 +1,6 @@
+.hero-section-background {
+  background-image: url("../../../../public/imgs/shopHeroSection.webp");
+  aspect-ratio: 4.56/1;
+  background-size: cover;
+  background-position: center;
+}

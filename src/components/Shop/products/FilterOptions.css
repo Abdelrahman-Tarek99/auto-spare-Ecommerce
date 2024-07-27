@@ -1,0 +1,35 @@
+.filter-toggle-btn {
+    background: #f0c040;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    text-transform: capitalize;
+    border-radius:  15px;
+    margin-bottom: 0.5rem;
+    width: auto;
+  }
+  
+  form {
+    display: block;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  

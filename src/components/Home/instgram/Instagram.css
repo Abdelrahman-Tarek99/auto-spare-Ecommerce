@@ -1,0 +1,64 @@
+.background-backdrop{
+    height: 450px ;
+    background-color: #f5f5f5;
+    position: relative;
+}
+.background-image-overlay{
+    background-image: url('/public/imgs/instgramSection.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.insta-section-tittle h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+letter-spacing: 2px;
+}
+.insta-section-subTittle h5{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-darkGrey);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.insta-section-btn button{
+    background-color: #f4f4f4;
+    color: var(--color-dark);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    width: 255px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.insta-section-btn button:hover{
+    background-color: var(--color-dark);
+    color: var(--color-white);
+}
+.insta-row{
+    position: absolute; 
+    top: 40%;
+    z-index: 1;
+}
+@media screen and (max-width: 768px){
+    .background-backdrop{
+        height: 300px;
+    }
+    .insta-section-tittle h1{
+        font-size: 2rem;
+    }
+    .insta-section-subTittle h5{
+        font-size: 1.2rem;
+    }
+    .insta-section-btn button{
+        font-size: 1.1rem;
+    }
+    .insta-row{
+        top: 30%;
+    }
+    
+}

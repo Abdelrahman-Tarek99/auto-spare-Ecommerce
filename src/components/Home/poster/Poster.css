@@ -1,0 +1,54 @@
+.poster-container{
+    background-color: #A5A5A5;
+}
+.poster-topic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.poster-topic h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: var(--color-dark);
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.poster-topic h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: var(--color-dark);
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 10px 0;
+
+}
+.poster-btn{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    width: 188px;
+    margin: 10px 0;
+}
+.poster-btn:hover{
+    background-color: var(--color-darkGrey);
+    color: var(--color-white);
+}
+
+@media screen and (max-width: 768px){
+    .poster-topic h1{
+        font-size: 2rem;
+    }
+    .poster-topic h2{
+        font-size: 1.5rem;
+    }
+    .poster-btn{
+        font-size: 1rem;
+    }
+    
+}

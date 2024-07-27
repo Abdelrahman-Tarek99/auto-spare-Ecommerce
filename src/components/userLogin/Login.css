@@ -1,0 +1,103 @@
+.container-bg {
+  background-image: url("/public/imgs/login-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+}
+.row-wrapper {
+  width: 100%;
+}
+.rounded-circle {
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-primary);
+}
+.container {
+  width: 30%;
+  min-height: 100dvh; ;
+}
+.row{
+    width: 100%;
+    border-radius: 15px;
+    min-height: fit-content;
+    padding: 20px;
+}
+.switching-statesType-typo{
+    font-family: Poppins, sans-serif;
+    color: var(--color-dark);
+    font-weight: 400;
+
+}
+.switching-statesType{
+  color: var(--color-lightDark);
+  border-bottom: 1px solid var(--color-lightDark);
+}
+.switching-statesType:hover{
+  cursor: pointer;
+  color: #0d6efd;
+  border-bottom: 1px solid #0d6efd;
+}
+
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-dark);
+}
+.btn {
+  border: 1px solid var(--color-dark);
+  width: 100%;
+  border-radius: 35px;
+  padding: 7px 0;
+}
+.logo-span {
+  margin-right: 3px;
+}
+
+.status-tittle{
+    font-family: Poppins, sans-serif;
+    color: var(--color-lightDark);
+    
+}
+
+.divider {
+  margin: auto 23px;
+}
+.horizontal-Line {
+  width: 40%;
+}
+.inputs-headers {
+  margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  color: var(--color-secondary);
+}
+.inputs > input {
+  height: 2rem;
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.password-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.btn-login{
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+    
+}
